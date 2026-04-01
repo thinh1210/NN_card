@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+.invite-body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(#1a1a2e, #16213e);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.flip-card {
+    width: 380px;
+    height: 620px;
+    max-width: 100%;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-style: preserve-3d;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border: 12px solid #0277bd;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background: linear-gradient(#e0f2f1, #b2dfdb);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.flip-card-back {
+    background: #e0f2f1;
+    transform: rotateY(180deg);
+}
+
+.bow {
+    font-size: 65px;
+    color: #1565c0;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 31px;
+    color: #1565c0;
+    margin: 8px 0;
+}
+
+.main-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #1565c0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.back-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.flip-card-front button {
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.flip-card-front button:hover {
+    background: #0277bd;
+}
