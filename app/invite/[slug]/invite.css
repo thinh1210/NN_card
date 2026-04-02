@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
 
 .invite-body {
     margin: 0;
@@ -74,8 +74,10 @@
 }
 
 .main-title {
+    font-family: 'Playfair Display', serif;
     font-size: 23px;
     font-weight: 700;
+    font-style: italic;
     color: #1565c0;
     text-align: center;
     line-height: 1.2;

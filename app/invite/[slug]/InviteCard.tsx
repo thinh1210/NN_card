@@ -16,13 +16,17 @@ export default function InviteCard({ guestName }: { guestName: string }) {
           {/* Mặt trước */}
           <div className="flip-card-front">
             {/* Hình trang trí 4 góc */}
-            <img src="/flipped-image.png" alt="Cá trái" style={{ position: 'absolute', top: '15px', left: '10px', width: '60px', zIndex: 10 }} />
-            <img src="/caheophai.png" alt="Cá phải" style={{ position: 'absolute', top: '15px', right: '10px', width: '60px', zIndex: 10 }} />
-            <img src="/minion1.png" alt="Minion trái" style={{ position: 'absolute', bottom: '15px', left: '15px', width: '55px', zIndex: 10 }} />
-            <img src="/minion2.png" alt="Minion phải" style={{ position: 'absolute', bottom: '15px', right: '15px', width: '55px', zIndex: 10 }} />
+            {!flipped && (
+              <>
+                <img src="/flipped-image.png" alt="Cá trái" style={{ position: 'absolute', top: '15px', left: '10px', width: '60px', zIndex: 10 }} />
+                <img src="/caheophai.png" alt="Cá phải" style={{ position: 'absolute', top: '15px', right: '10px', width: '60px', zIndex: 10 }} />
+              </>
+            )}
+            <img src="/minion1.png" alt="Minion trái" style={{ position: 'absolute', bottom: '10px', left: '5px', width: '55px', zIndex: 10 }} />
+            <img src="/minion2.png" alt="Minion phải" style={{ position: 'absolute', bottom: '10px', right: '5px', width: '40px', zIndex: 10 }} />
 
             {/* <div className="bow" style={{ marginTop: '10px' }}>🎀</div> */}
-            <p style={{ fontSize: '18px', margin: '4px 0', color: '#1565c0', fontWeight: 600 }}>Thân gửi  {guestName},</p>
+            <p className="main-title" style={{ fontSize: '18px', margin: '4px 0', color: '#1565c0', fontWeight: 600 }}>Thân gửi  {guestName},</p>
             <h1 className="main-title" style={{ fontSize: '17px', margin: '4px 0' }}>TRÂN TRỌNG KÍNH MỜI BẠN<br />ĐẾN DỰ LỄ TỐT NGHIỆP CỦA <br /> NHƯ NGỌC</h1>
 
             <img src="/image copy.png" alt="Cú tốt nghiệp" style={{ width: '250px', margin: '10px ' }} />
