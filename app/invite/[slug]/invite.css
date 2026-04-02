@@ -42,7 +42,7 @@
     border-radius: 18px;
     backface-visibility: hidden;
     overflow: hidden;
-    border: 12px solid #0277bd;
+    border: 12px solid white;
     box-sizing: border-box;
 }
 
