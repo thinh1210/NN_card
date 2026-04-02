@@ -26,15 +26,16 @@ export default function InviteCard({ guestName }: { guestName: string }) {
             <img src="/minion2.png" alt="Minion phải" style={{ position: 'absolute', bottom: '10px', right: '5px', width: '40px', zIndex: 10 }} />
 
             {/* <div className="bow" style={{ marginTop: '10px' }}>🎀</div> */}
-            <p className="main-title" style={{ fontSize: '18px', margin: '4px 0', color: '#1565c0', fontWeight: 600 }}>Thân gửi  {guestName},</p>
-            <h1 className="main-title" style={{ fontSize: '17px', margin: '4px 0' }}>TRÂN TRỌNG KÍNH MỜI BẠN<br />ĐẾN DỰ LỄ TỐT NGHIỆP CỦA <br /> NHƯ NGỌC</h1>
+            <p style={{ fontStyle: 'italic', color: '#1565c0', marginTop: '-5px', marginBottom: '10px', fontSize: '40px' }}>"Có công mài sắt <br /> Có ngày nên kim"</p>
+            <img src="/image copy.png" alt="Cú tốt nghiệp" style={{ width: '250px', margin: '10px' }} />
+            <h1 className="main-title" style={{ fontSize: '30px', margin: '0px 0' }}>Thân gửi </h1>
+            <p className="main-title" style={{ fontSize: '40px', margin: '4px 0', color: '#1565c0', fontWeight: 600 }}> {guestName},</p>
+            <p className="main-title" style={{ fontSize: '30px', margin: '0px 0' }}> đến dự lễ tốt nghiệp của <br /> Như Ngọc nhé </p>
 
-            <img src="/image copy.png" alt="Cú tốt nghiệp" style={{ width: '250px', margin: '10px ' }} />
-
-            <div style={{ fontSize: '12.5px', color: '#033f83ff', textAlign: 'center', lineHeight: '1.4' }}>
-              <p style={{ margin: '3px 0' }}><strong>⏰ 17h00 - 17h30 Thứ Bảy, 04/04/2026</strong></p>
+            {/* <div style={{ fontSize: '12.5px', color: '#033f83ff', textAlign: 'center', lineHeight: '1.4' }}>
+               <p style={{ margin: '3px 0' }}><strong>⏰ 17h00 - 17h30 Thứ Bảy, 04/04/2026</strong></p>
               <p style={{ margin: '3px 0' }}><strong>📍 UEH cơ sở A</strong> - 59C Nguyễn Đình Chiểu,<br />Phường Võ Thị Sáu, Quận 3, TP.HCM</p>
-              <p style={{ margin: '3px 0' }}><strong>📞 Liên hệ: 0795444502</strong></p>
+              <p style={{ margin: '3px 0' }}><strong>📞 Liên hệ: 0795444502</strong></p> 
               <div style={{ marginTop: '10px', fontSize: '8px', textAlign: 'left', background: 'rgba(255,255,255,0.7)', padding: '6px 10px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', width: '90%', border: '1px solid rgba(13, 71, 161, 0.1)' }}>
                 <strong style={{ color: '#0d47a1', display: 'block', marginBottom: '2px' }}>🚗 Bãi đỗ xe</strong>
                 <ul style={{ margin: '0', paddingLeft: '10px', color: '#1565c0', listStyleType: 'circle', lineHeight: '1.3' }}>
@@ -45,10 +46,11 @@ export default function InviteCard({ guestName }: { guestName: string }) {
                   <li>Bãi xe Nhà Văn hóa Thanh niên</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
+
 
             <button
-              style={{ marginTop: '15px' }}
+              style={{ marginTop: '30px' }}
               onClick={(e) => {
                 e.preventDefault()
                 e.stopPropagation()
@@ -65,6 +67,6 @@ export default function InviteCard({ guestName }: { guestName: string }) {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
