@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `Thân mời ${data.guest_name} đến dự lễ tốt nghiệp của Thịnh`,
-    description: `Thân mời ${data.guest_name} đến dự buổi lễ tốt nghiệp của Thịnh. Sự hiện diện của bạn là niềm vinh hạnh của mình!`,
+    title: `Thân mời ${data.guest_name} đến dự lễ tốt nghiệp của Như Ngọc`,
+    description: `Thân mời ${data.guest_name} đến dự buổi lễ tốt nghiệp của Như Ngọc. Sự hiện diện của bạn là niềm vinh hạnh của mình!`,
     openGraph: {
-      title: `Thân mời ${data.guest_name} đến dự lễ tốt nghiệp của Thịnh`,
-      description: `Thân mời ${data.guest_name} đến dự buổi lễ tốt nghiệp của Thịnh. Sự hiện diện của bạn là niềm vinh hạnh của mình!`,
+      title: `Thân mời ${data.guest_name} đến dự lễ tốt nghiệp của Như Ngọc`,
+      description: `Thân mời ${data.guest_name} đến dự buổi lễ tốt nghiệp của Như Ngọc. Sự hiện diện của bạn là niềm vinh hạnh của mình!`,
       images: ['/image.png'],
     }
   }
